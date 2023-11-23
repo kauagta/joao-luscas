@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastros usuarios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body style="text-align: center;">
+    <form action="post"><nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            cadastros
+          </a>
+        </div></form>
+      </nav>
+      <form action="{% url 'listagem_usuarios' %}" method="post">
+        {% csrf_token %}
+        <div class="container">
+        <div class="container">
+            <h1>cadastros de usuarios</h1>
+            nome:<input class="form-controls-sm" name="nome" type="text" name="" id="">
+            idade:<input class="form-controls-sm" name="idade" type="text">
+            <button class="form-controls-sm">
+                enviar
+            </button>
+        </div>
+      </form>
+      
+  
+
+
+<style>
+
+</style>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
